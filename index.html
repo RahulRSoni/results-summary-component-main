@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Results summary component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Outfit:wght@400;700&display=swap"
+    rel="stylesheet">
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    #main {
+      width: 650px;
+      height: 520px;
+      display: flex;
+      justify-content: space-between;
+      font-family: 'Hanken Grotesk', sans-serif;
+      border-radius: 25px;
+      box-shadow: 3px 3px 50px 10px hsla(252, 100%, 67%, 0.2);
+    }
+
+    #result {
+      text-align: center;
+      color: hsl(0, 0%, 100%);
+      border-radius: 25px;
+      background-color: hsl(241, 81%, 54%);
+      padding: 25px 50px 50px 50px;
+    }
+
+    .head {
+      margin-bottom: 35px;
+      opacity: .6;
+      font-weight: 500;
+    }
+
+    .avg-rating {
+      background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      margin: auto;
+      padding: 50px;
+    }
+
+    .rate {
+      font-weight: 800;
+      font-size: 70px;
+      margin: 0;
+    }
+
+    .denom {
+      margin: 0;
+      opacity: .6;
+    }
+
+    .pera h1 {
+      font-weight: 600;
+    }
+
+    .pera p {
+      font-weight: 500;
+      font-size: large;
+      opacity: .6;
+    }
+
+    #summary {
+      width: 500px;
+      height: 520px;
+      font-family: 'Hanken Grotesk', sans-serif;
+      padding: 25px 20px 25px 20px;
+    }
+
+    table {
+      border: none;
+      width: 285px;
+      border-spacing: 12px;
+    }
+
+    span {
+      opacity: 0.6;
+    }
+
+    td {
+      font-weight: bold;
+      border-radius: 10px;
+      padding: 10px;
+    }
+
+    .reaction {
+      background-color: hsla(0, 100%, 67%, .1);
+    }
+
+    .memory {
+      background-color: hsla(39, 100%, 56%, .1);
+    }
+
+    .verbal {
+      background-color: hsla(166, 100%, 37%, .1);
+    }
+
+    .visual {
+      background-color: hsla(234, 85%, 45%, .1);
+    }
+
+    .btn {
+      /* width: 100px; */
+      /* margin: auto; */
+      padding: 50px 0 50px 10px;
+      /* background-color: red; */
+    }
+
+    button {
+      background-color: hsl(252, 31%, 35%);
+      border: none;
+      border-radius: 25px;
+      color: white;
+      padding: 15px 100px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover{
+       background-color:hsl(241, 81%, 54%);
+    }
+  </style>
+</head>
+
+<body>
+  <div id="main">
+
+    <div id="result">
+      <div>
+        <h2 class="head">Your Result</h2>
+      </div>
+      <div class="avg-rating">
+        <p class="rate">76</p>
+        <p class="denom">of 100</p>
+      </div>
+      <div class="pera">
+        <h1>Great</h1>
+        <p>You scored higher than 65% of the people who have taken these tests.</p>
+      </div>
+    </div>
+    <div id="summary">
+      <h2>Summary</h2>
+      <div class="rating-table">
+
+        <!-- 
+        <ul>
+          <li class="reaction">Reaction 80 <span>/ 100</span></li>
+          <li class="memory">Memory 92 <span>/ 100</span></li>
+          <li class="verbal">Verbal 61 <span>/ 100</span></li>
+          <li class="visual">Visual 72 <span>/ 100</span></li>
+        </ul> -->
+
+        <table>
+          <tr class="reaction">
+            <td><img class="img" src="./assets/images/icon-reaction.svg"> Reaction 80 <span>/ 100</span></td>
+          </tr>
+          <tr class="memory">
+            <td><img class="img" src="./assets/images/icon-memory.svg"> Memory 92 <span>/ 100</span></td>
+          </tr>
+          <tr class="verbal">
+            <td><img class="img" src="./assets/images/icon-verbal.svg"> Verbal 61 <span>/ 100</span></td>
+          </tr>
+          <tr class="visual">
+            <td><img class="img" src="./assets/images/icon-visual.svg"> Visual 72 <span>/ 100</span></td>
+          </tr>
+        </table>
+      </div>
+      <div class="btn">
+        <button>Continue</button>
+      </div>
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+
+</html>
