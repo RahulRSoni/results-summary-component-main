@@ -16,133 +16,8 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Outfit:wght@400;700&display=swap"
     rel="stylesheet">
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
 
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-
-    #main {
-      width: 650px;
-      height: 520px;
-      display: flex;
-      justify-content: space-between;
-      font-family: 'Hanken Grotesk', sans-serif;
-      border-radius: 25px;
-      box-shadow: 3px 3px 50px 10px hsla(252, 100%, 67%, 0.2);
-    }
-
-    #result {
-      text-align: center;
-      color: hsl(0, 0%, 100%);
-      border-radius: 25px;
-      background-color: hsl(241, 81%, 54%);
-      padding: 25px 50px 50px 50px;
-    }
-
-    .head {
-      margin-bottom: 35px;
-      opacity: .6;
-      font-weight: 500;
-    }
-
-    .avg-rating {
-      background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
-      border-radius: 50%;
-      width: 100px;
-      height: 100px;
-      margin: auto;
-      padding: 50px;
-    }
-
-    .rate {
-      font-weight: 800;
-      font-size: 70px;
-      margin: 0;
-    }
-
-    .denom {
-      margin: 0;
-      opacity: .6;
-    }
-
-    .pera h1 {
-      font-weight: 600;
-    }
-
-    .pera p {
-      font-weight: 500;
-      font-size: large;
-      opacity: .6;
-    }
-
-    #summary {
-      width: 500px;
-      height: 520px;
-      font-family: 'Hanken Grotesk', sans-serif;
-      padding: 25px 20px 25px 20px;
-    }
-
-    table {
-      border: none;
-      width: 285px;
-      border-spacing: 12px;
-    }
-
-    span {
-      opacity: 0.6;
-    }
-
-    td {
-      font-weight: bold;
-      border-radius: 10px;
-      padding: 10px;
-    }
-
-    .reaction {
-      background-color: hsla(0, 100%, 67%, .1);
-    }
-
-    .memory {
-      background-color: hsla(39, 100%, 56%, .1);
-    }
-
-    .verbal {
-      background-color: hsla(166, 100%, 37%, .1);
-    }
-
-    .visual {
-      background-color: hsla(234, 85%, 45%, .1);
-    }
-
-    .btn {
-      /* width: 100px; */
-      /* margin: auto; */
-      padding: 50px 0 50px 10px;
-      /* background-color: red; */
-    }
-
-    button {
-      background-color: hsl(252, 31%, 35%);
-      border: none;
-      border-radius: 25px;
-      color: white;
-      padding: 15px 100px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-      cursor: pointer;
-    }
-
-    button:hover{
-       background-color:hsl(241, 81%, 54%);
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -173,9 +48,20 @@
           <li class="visual">Visual 72 <span>/ 100</span></li>
         </ul> -->
 
-        <table>
+
+        <div class="summaryTable">
+          <div class="icon">
+            <img class="img" src="./assets/images/icon-reaction.svg" />
+          </div>
+          <div id="reaction">
+            Reaction
+          </div>
+          <div class="score">80 <span>/ 100</span></div>
+        </div>
+
+        <!-- <table>
           <tr class="reaction">
-            <td><img class="img" src="./assets/images/icon-reaction.svg"> Reaction 80 <span>/ 100</span></td>
+            <td><img class="img" src="./assets/images/icon-reaction.svg"></td><td>Reaction</td> <td> 80 <span>/ 100</span></td>
           </tr>
           <tr class="memory">
             <td><img class="img" src="./assets/images/icon-memory.svg"> Memory 92 <span>/ 100</span></td>
@@ -186,7 +72,7 @@
           <tr class="visual">
             <td><img class="img" src="./assets/images/icon-visual.svg"> Visual 72 <span>/ 100</span></td>
           </tr>
-        </table>
+        </table> -->
       </div>
       <div class="btn">
         <button>Continue</button>
