@@ -22,7 +22,6 @@
 
 <body>
   <div id="main">
-
     <div id="result">
       <div>
         <h2 class="head">Your Result</h2>
@@ -38,51 +37,57 @@
     </div>
     <div id="summary">
       <h2>Summary</h2>
+
       <div class="rating-table">
-
-        <!-- 
-        <ul>
-          <li class="reaction">Reaction 80 <span>/ 100</span></li>
-          <li class="memory">Memory 92 <span>/ 100</span></li>
-          <li class="verbal">Verbal 61 <span>/ 100</span></li>
-          <li class="visual">Visual 72 <span>/ 100</span></li>
-        </ul> -->
-
-
-        <div class="summaryTable">
+        <div class="summaryTable" id="reaction">
           <div class="icon">
             <img class="img" src="./assets/images/icon-reaction.svg" />
           </div>
-          <div id="reaction">
+          <div class="ratingHeader">
             Reaction
           </div>
           <div class="score">80 <span>/ 100</span></div>
         </div>
 
-        <!-- <table>
-          <tr class="reaction">
-            <td><img class="img" src="./assets/images/icon-reaction.svg"></td><td>Reaction</td> <td> 80 <span>/ 100</span></td>
-          </tr>
-          <tr class="memory">
-            <td><img class="img" src="./assets/images/icon-memory.svg"> Memory 92 <span>/ 100</span></td>
-          </tr>
-          <tr class="verbal">
-            <td><img class="img" src="./assets/images/icon-verbal.svg"> Verbal 61 <span>/ 100</span></td>
-          </tr>
-          <tr class="visual">
-            <td><img class="img" src="./assets/images/icon-visual.svg"> Visual 72 <span>/ 100</span></td>
-          </tr>
-        </table> -->
+        <div class="summaryTable" id="memory">
+          <div class="icon">
+            <img class="img" src="./assets/images/icon-memory.svg" />
+          </div>
+          <div class="ratingHeader">
+            Memory
+          </div>
+          <div class="score">92 <span>/ 100</span></div>
+        </div>
+
+        <div class="summaryTable" id="verbal">
+          <div class="icon">
+            <img class="img" src="./assets/images/icon-verbal.svg" />
+          </div>
+          <div class="ratingHeader">
+            Verbal
+          </div>
+          <div class="score">61 <span>/ 100</span></div>
+        </div>
+
+        <div class="summaryTable" id="visual">
+          <div class="icon">
+            <img class="img" src="./assets/images/icon-visual.svg" />
+          </div>
+          <div class="ratingHeader">
+            Visual
+          </div>
+          <div class="score">72 <span>/ 100</span></div>
+        </div>
       </div>
       <div class="btn">
         <button>Continue</button>
       </div>
     </div>
   </div>
-  <div class="attribution">
+  <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </div> -->
 </body>
 
 </html>
