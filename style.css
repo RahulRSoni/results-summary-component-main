@@ -154,6 +154,8 @@ button:hover {
   border: none;
 }
 
+/* For mobile-view */
+
 @media screen and (max-width: 375px) {
 body{
   display: block;
@@ -162,10 +164,18 @@ body{
 #main {
   padding: 0;
   width: 100vw;
+  height: auto;
   display: flex;
   flex-direction: column;
   font-family: "Hanken Grotesk", sans-serif;
   box-shadow: 3px 3px 50px 10px hsla(252, 100%, 67%, 0.2);
+}
+
+.head {
+  margin-bottom: 35px;
+  opacity: 0.6;
+  font-weight: 500;
+  font-size: large;
 }
 
 #result {
@@ -192,7 +202,7 @@ body{
 
 .rate {
   font-weight: 800;
-  font-size: 60px;
+  font-size: 55px;
   margin: 0;
 }
 
@@ -214,18 +224,17 @@ body{
 }
 
 #summary {
-  width: 310px;
+  width: 327px;
   font-family: "Hanken Grotesk", sans-serif;
 
 }
-
 
 button {
   background-color: hsl(252, 31%, 35%);
   border: none;
   border-radius: 25px;
   color: white;
-  padding: 15px 122px;
+  padding: 15px 132px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
